@@ -7,13 +7,17 @@ const sequelize = require('../config/connection');
 class Product extends Model {}
 
 // set up fields and rules for Product model
+//Integer
+//Set as primary key
+//Doesn't allow null values
+//Uses auto increment
 Product.init(
   {
     id: {
-      type: DataTypes.INTEGER, //Integer
-      allowNull: false, //Doesn't allow null values
-      primaryKey: true, //Set as primary key
-      autoIncrement: true //Uses auto increment
+      type: DataTypes.INTEGER, 
+      allowNull: false, 
+      primaryKey: true,
+      autoIncrement: true
     },
     product_name: {
       type: DataTypes.STRING,
