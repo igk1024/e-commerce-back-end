@@ -1,7 +1,7 @@
 # E-commerce Back-End
 
 ## Description & Acceptance Criteria
-This is a back-end for e-commerce website that uses the latest technologies to compete with other e-commerce companies.<br />
+This is a back-end for e-commerce website that uses the latest technologies to compete with other e-commerce companies.<br /><br />
 GIVEN a functional Express.js API<br />
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file<br />
 THEN I am able to connect to a database using Sequelize<br />
