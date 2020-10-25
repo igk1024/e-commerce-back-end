@@ -17,17 +17,17 @@ router.get('/', (req, res) => {
       ],
       include: [
         {
-          model: Tag,
-          attributes: [
-            'id',
-            'tag_name', 
-          ],
-        },
-        {
           model: Category,
           attributes: [
             'id',
             'category_name'
+          ],
+        },
+        {
+          model: Tag,
+          attributes: [
+            'id',
+            'tag_name' 
           ],
         },
       ]
@@ -161,6 +161,7 @@ router.put('/:id', (req, res) => {
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
       // console.log(err);
+      //console.log("---- Hit Catch Block after updatedProductTags with Error : \n", err);
       res.status(400).json(err);
     });
 });
